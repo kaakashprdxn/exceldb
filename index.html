@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <section class="form">
+    <div class="wrapper">
+      <h1>student registration form</h1>
+      <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+        <input id="nameField" name="entry.1366953843" placeholder="Enter your name" type="text" class="name">
+        <input id="emailField" name="entry.1107270968" placeholder="Enter your email" type="text">
+        <input id="mobField" name="entry.1378507564" placeholder="Enter your 10 Digit Phone Number" type="text">
+        <select id="cinema" name="entry.780000694" placeholder="Select Qulification">
+          <option value="qualification">Qualification</option>
+          <option value="SSC">SSC</option>
+          <option value="HSC">HSC</option>
+          <option value="Degree">Degree</option>
+        </select>
+        <div class="submit">
+          <button id="send" type="submit" class="common_btn">submit</button>
+        </div>
+      </form>
+      <div id="dynamic-list"></div>
+      <h3 id="success-msg"> Your Request has been submited</h3>
+    </div>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
